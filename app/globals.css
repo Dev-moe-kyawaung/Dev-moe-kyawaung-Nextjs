@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: "Inter", system-ui, sans-serif;
+    --font-jetbrains: "JetBrains Mono", monospace;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-surface/80 backdrop-blur-md border border-border/50;
+  }
+
+  .glass-hover {
+    @apply glass transition-all duration-300 hover:bg-surface/90 hover:border-primary/30 hover:shadow-lg;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground 
+           rounded-lg font-medium transition-all duration-300 
+           hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25
+           active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-secondary text-secondary-foreground 
+           rounded-lg font-medium transition-all duration-300 
+           hover:bg-secondary-dark hover:shadow-lg
+           active:scale-95 focus:outline-none focus:ring-2 focus:ring-secondary/50;
+  }
+
+  .card {
+    @apply bg-card rounded-xl border border-border shadow-sm transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-lg hover:border-primary/30 hover:scale-[1.02];
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+
+  .animate-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+}
