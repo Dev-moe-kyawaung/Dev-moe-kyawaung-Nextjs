@@ -1,0 +1,56 @@
+moe-kyaw-aung-portfolio/
+├── app/
+│   ├── (routes)/
+│   │   ├── home/page.tsx
+│   │   ├── about/page.tsx
+│   │   ├── skills/page.tsx
+│   │   ├── case-studies/
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]/page.tsx
+│   │   ├── projects/page.tsx
+│   │   ├── blog/
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]/page.tsx
+│   │   ├── contact/page.tsx
+│   │   ├── resume/page.tsx
+│   │   ├── testimonials/page.tsx
+│   │   └── services/page.tsx
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── ui/
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   └── badge.tsx
+│   ├── animations/
+│   │   ├── fade-in.tsx
+│   │   ├── slide-in.tsx
+│   │   └── scale-in.tsx
+│   ├── layout/
+│   │   ├── header.tsx
+│   │   ├── footer.tsx
+│   │   └── navigation.tsx
+│   └── sections/
+│       ├── hero.tsx
+│       ├── skills-section.tsx
+│       ├── case-studies-section.tsx
+│       └── contact-form.tsx
+├── lib/
+│   └── actions/
+│       ├── contact-action.ts
+│       └── resume-action.ts
+├── types/
+│   └── index.ts
+├── hooks/
+│   └── use-scroll-animation.ts
+├── public/
+│   ├── images/
+│   └── fonts/
+├── styles/
+│   └── animations.css
+├── tailwind.config.ts
+├── tsconfig.json
+├── next.config.js
+├── postcss.config.js
+└── package.json
