@@ -1,0 +1,18 @@
+# 1. Create project directory
+mkdir Dev-moe-kyawaung-Nextjs
+cd -Dev-moe-kyawaung-Nextjs
+
+# 2. Initialize npm
+npm init -y
+
+# 3. Install dependencies
+npm install next@15.2.4 react@19.0.0 react-dom@19.0.0 framer-motion@11.15.0
+npm install -D tailwindcss@3.4.17 typescript@5.7.2 @types/react@19.0.7 @types/node@22.10.5
+npm install clsx tailwind-merge react-icons
+
+# 4. Create all files from the codebase above
+
+# 5. Run development server
+npm run dev
+
+# 6. Open http://localhost:3000
